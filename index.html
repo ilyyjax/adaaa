@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pickled</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen GUI -->
+  <div id="startScreen">
+    <div id="startContent">
+      <h1>Welcome to Pickled!</h1>
+      <p>Objective ----> The longer you hold spacebar, the higher the score.<br>
+      Multipliers hit at certain milestones.<br>
+      Simple as that. Have fun!</p>
+      <button id="startButton">Start Game</button>
+    </div>
+  </div>
+
+  <div class="game-container" id="gameContainer" style="display:none;">
+    <div id="scoreboard">
+      <h1>Pickled</h1>
+      <p>Score: <span id="score">0</span></p>
+      <p>Highscore: <span id="highscore">0</span></p>
+      <p>Multiplier: <span id="multiplier">1</span></p>
+      <label>Pickle Color: <input type="color" id="pickleColor" value="#9bff00"></label>
+    </div>
+
+    <div id="game-area">
+      <div id="pickle">
+        <div class="eyes">
+          <div class="eye"></div>
+          <div class="eye"></div>
+        </div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="bgMusic" src="bgmusic.mp3" loop></audio>
+  <audio id="milestoneSound" src="milestone.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
